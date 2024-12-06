@@ -13,13 +13,12 @@ let userEmail; //undefined type
 const id = Symbol('123')  //uniqueness
 const anotherId = Symbol('123')  // unique 
 
-console.log(id === anotherId); // false
+// console.log(id === anotherId); // false
 // both are not same 
 
 const bigNumber = 345654357665435675n
 
 
-// stack and heap memory concept
 
 // Reference (Non primitive)
 
@@ -40,9 +39,9 @@ const myFunction = function(){
     console.log("Hello world");
 }
 
-console.log(typeof number);
-console.log(typeof anotherId);
-console.log(typeof myFunction); //object function
+// console.log(typeof number);
+// console.log(typeof anotherId);
+// console.log(typeof myFunction); //object function
 
 // jo bhi non premitive hote hai unka datatype object hi hota hai 
 
@@ -65,3 +64,32 @@ console.log(typeof myFunction); //object function
 //        Arrays  =>  object
 //        Function  =>  function object
 //        Object  =>  object
+
+
+
+// ********stack(primitive) and heap memory (non primitive) concept********
+
+
+//primitive
+let myYoutubename = "khushalparmar"
+let anothername = myYoutubename  // only copy is given to anothername
+
+console.log(anothername) //khushalparmar
+
+anothername = "chaiorcode"
+ 
+console.log(myYoutubename) //khushalparmar
+console.log(anothername) //chaiorcode
+
+
+//non primitive
+let userOne = {
+    email: "user@google.com",
+    upi : "user@ybl"
+}
+
+let userTwo = userOne // refrence is given to userTwo
+
+userTwo.email = "khushal@google.com"
+console.log(userOne.email) //khushal@google.com
+console.log(userTwo.email) //khushal@google.com
