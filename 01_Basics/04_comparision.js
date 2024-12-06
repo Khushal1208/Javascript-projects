@@ -9,6 +9,8 @@
 // console.log("02" > 1); //true
 // // typescript don't allows to compare two diff datatypes 
 
+//below code will always create confusions
+
 // console.log(null > 0);
 // console.log(null == 0);
 // console.log(null >= 0);
