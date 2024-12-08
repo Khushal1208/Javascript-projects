@@ -32,18 +32,24 @@ const all_new_Heros = [...marvel_heros,...dc_heros]
 // console.log(all_new_Heros)
 // [ 'thor', 'ironman', 'spiderman', 'super', 'flash', 'batman' ]
 
+
+
+// Flattening one level of nesting
 const another_arr = [1,2,3,[4,5,6],7,[6,7,[4,5]]]
 
-const real_another_arr = another_arr.flat()
+const real_another_arr = another_arr.flat(); 
+// `flat()` removes one level of nesting by default
 // console.log(real_another_arr)
 // [ 1, 2, 3, 4, 5, 6, 7, 6, 7, [ 4, 5 ] ]
 // flat -> Returns a new array with all sub-array elements concatenated into it recursively up to the specified depth.
 
 const real_another_arr2 = another_arr.flat(Infinity)
+// `flat(Infinity)` recursively flattens the entire array
 // console.log(real_another_arr2)
 // [1, 2, 3, 4, 5, 6, 7, 6, 7, 4, 5]
 
 // console.log(Array.isArray("khushal")) //false
+// console.log(Array.isArray(["khushal"]));  // true
 // console.log(Array.from("khushal")) // [ 'k', 'h', 'u', 's', 'h', 'a', 'l']
 
 console.log(Array.from({name: "khushal"})) // it gives empty arr []. itersting question for interviews
