@@ -1,0 +1,28 @@
+Q. How JavaScript Code Gets Executed ?
+ANS.
+for detailed knowlegde ->>>
+ https://www.freecodecamp.org/news/execution-context-how-javascript-works-behind-the-scenes/
+
+While reading through HTML, if the browser encounters JavaScript code to run via a <script> tag or an attribute that contains JavaScript code like onClick, it sends it to its JavaScript engine.
+
+The browser's JavaScript engine then creates a special environment to handle the transformation and execution of this JavaScript code. This environment is known as the Execution Context.
+
+The Execution Context contains the code that's currently running, and everything that aids in its execution.
+
+There are two kinds of Execution Context in JavaScript:
+
+Global Execution Context (GEC)
+Function Execution Context (FEC)
+
+
+* **JavaScript Execution Context**: The environment where JavaScript code is executed, created by the browser's JavaScript engine to handle transformation and execution of code.
+
+* **Two types of Execution Contexts**: Global Execution Context (GEC) and Function Execution Context (FEC), with GEC being the default context for all JavaScript code not inside a function.
+
+* **Creation of Execution Contexts**: Happens in two phases: Creation Phase, which includes the creation of the Variable Object (VO) and the Scope Chain.
+
+* **Hoisting**: A process where function and variable declarations are stored in memory prior to execution, making them available even before code execution begins.
+
+* **Scope Chain**: A mechanism that determines how accessible a piece of code is to other parts of the codebase, created for each Function Execution Context.
+
+* **Lexical Scoping**: A concept where inner functions have access to the code defined in the outer function and its parents, even after execution is complete.
