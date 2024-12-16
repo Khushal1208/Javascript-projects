@@ -1,4 +1,4 @@
-// variableName var = value
+node// variableName var = value
 // varaibleName var2 = datatype(var1)
 
 
@@ -80,27 +80,11 @@ let str3 = str1 + str2
 // num1 = num2 = num3 = 2 + 2   not good to write
 
 let gameCounter = 100
-l =gameCounter++; 
-// console.log(l);  //100  postfix => the increment operator increments and returns the value before incrementing.
-// console.log(gameCounter); //101
-
-r = ++gameCounter; 
-// console.log(r); //102   prefix => the increment operator increments and returns the value after incrementing.
-// console.log(gameCounter); //102
+l =gameCounter++; //101
+console.log(l); 
+gameCounter++; //102
 ++gameCounter; //103
-// console.log(gameCounter); 
-
-// ++(++x); // SyntaxError: Invalid left-hand side expression in prefix operation
-
-let x = 3
-const y = x++
-// console.log(x) // 4
-// console.log(y) // 3
-
-let x2 = 3n
-const y2 = x2++ 
-// console.log(x2) // 4n
-// console.log(y2) //4n
+console.log(gameCounter); 
 
 // link to study
 // https://tc39.es/ecma262/multipage/abstract-operations.html#sec-type-conversion
