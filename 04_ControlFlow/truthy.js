@@ -99,5 +99,27 @@ function example() {
     : condition3 ? value3
     : value4;
 }
-
 //  this is equilvalent to the following if..else chain
+
+
+
+
+// Ternary vs Nullish Coalescing
+
+//Ternary
+// Syntax: condition ? true-expression : false-expression
+// Example: let result = (age >= 18) ? 'Adult' : 'Minor';
+
+
+//Nullish Coalescing
+// Syntax: left-expression ?? right-expression
+// Example: let defaultValue = nullishValue ?? 'default value';
+
+
+// Key differences:
+
+// Purpose: Ternary operator is used for conditional execution of code, whereas nullish coalescing operator is used to provide a default value when the left operand is null or undefined.
+
+// Return values: Ternary operator returns either the true-expression or false-expression based on the condition. Nullish coalescing operator returns the left operand if it’s not null or undefined, and the right operand if it is.
+
+// Usage: Ternary operator is often used for simple conditional statements, while nullish coalescing operator is useful when working with optional values or defaulting to a specific value when a variable is null or undefined.
