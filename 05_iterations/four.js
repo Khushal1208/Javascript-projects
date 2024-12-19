@@ -44,5 +44,4 @@ const programming  = ["js","rb","py","java","cpp","swift"]
 for (const key in programming) {
     // console.log(key); // it will print only index
     console.log(programming[key]); // it will print all values
-    
 }
