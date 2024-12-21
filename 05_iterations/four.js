@@ -43,5 +43,20 @@ const programming  = ["js","rb","py","java","cpp","swift"]
 
 for (const key in programming) {
     // console.log(key); // it will print only index
-    console.log(programming[key]); // it will print all values
+    // console.log(programming[key]); // it will print all values
 }
+
+
+//Map
+const map = new Map() 
+
+map.set('IN', "India")
+map.set('USA', "United States of America")
+map.set('Fr', "France")
+map.set('IN', "India") 
+
+for (const key in map) {
+    console.log(key); // will not print anything , coz maps are itratable 
+}
+
+
