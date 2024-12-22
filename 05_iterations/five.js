@@ -48,7 +48,7 @@ const myCoding = [
 myCoding.forEach(elements=>{
     // console.log(elements); // it prints complete obj
     console.log(elements.languageFileName);
-    
+
     
 })
 
