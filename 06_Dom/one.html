@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<!-- https://www.codehelp.in/tutorial/javascript/javascript-html-dom-elements -->
+
+
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -12,4 +15,80 @@
 
     </div>
 </body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <div id="myPara">
+        This element has <span>spacing</span>
+
+        <p style="display: none">This has a property Hidden</p>
+    </div>
+
+
+
+    <script>
+        //Selecting the element with id "myPara"
+        let myElement = document.getElementById("myPara");
+
+        //Now retrieving textContent of the selected element
+        let content = myElement.textContent;
+        let content2 = myElement.innerHTML;
+        let content3 = myElement.outerHTML;
+        let content4 = myElement.innerText;
+
+        console.log("this is text content\n" + content);
+        console.log("this is innerhtml\n" + content2);
+        console.log("this is outerhtml\n" + content3);
+        console.log("this is innertext\n" + content4);
+
+        //   innerHTML vs. outerHTML: innerHTML deals with the content inside the element, while outerHTML includes the element itself.
+
+        // innerText vs. textContent: innerText retrieves only visible text, excluding child elements, while textContent retrieves all text content, including child elements.
+
+        /* Output:
+            This element     has spacing
+    
+            This has a property Hidden
+        */
+
+        //Let's try to change the content of selected element
+        let newPara = 'Hiii';
+        myElement.textContent = newPara;
+
+
+
+        // Create a new paragraph element
+        let paragraph = document.createElement('p');
+
+        //Add text Content to the new Paragraph
+        paragraph.textContent = "Hello is a paragraph";
+
+        // Append paragraph to the body of document element
+        document.body.appendChild(paragraph);
+
+
+        // Create a new paragraph element
+        var paragraph1 = document.createElement("p");
+
+        // Create text node
+        var text = document.createTextNode("This is a dynamically added paragraph.");
+
+        // Append text node to paragraph element
+        paragraph1.appendChild(text);
+
+        // Append paragraph to the body element
+        document.body.appendChild(paragraph1);
+    </script>
+</body>
+
 </html>

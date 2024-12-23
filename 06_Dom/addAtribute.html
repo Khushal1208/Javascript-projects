@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>setAttribute() Example</title>
+</head>
+<body>
+
+    <p id="demo">This is a paragraph.</p>
+
+    <button onclick="addAttribute()">Add Attribute</button>
+
+    <script>
+        function addAttribute(){
+            let para = document.getElementById("demo")
+
+            // Create an <a> element
+            let link = document.createElement("a");
+            link.setAttribute("href", "https://www.codehelp.in/");
+            // link.setAttribute("target", "_blank"); // Open link in a new tab
+            link.textContent = "Visit CodeHelp"; // Text of the link
+
+            // Clear paragraph content and add the link
+            para.innerHTML = ""; // Clear existing content
+            para.appendChild(link);
+            
+            // add styles to the paragraph
+            para.setAttribute("style", "color: red; font-size: 20px;");
+            para.setAttribute("class", "highlight");
+
+            console.log("Added the link with styles.");
+        }
+    </script>
+</body>
+</html>
