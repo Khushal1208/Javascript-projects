@@ -2,5 +2,4 @@
 A code repo for javascript series from chai or code
 beginner to advanced 
 with projects..
-lets grow
 lets build 
