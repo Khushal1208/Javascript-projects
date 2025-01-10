@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="background-color: #212121;">
+    <div class="card">
+        <img src="" alt="User Avatar" id = 'avatar'>
+      <div class="card-details">
+        <p class="text-title">Card title</p>
+        <p class="text-body">Here are the details of the card</p>
+      </div>
+      <button class="card-button">More info</button>
+    </div>
+</body>
+<script>
+    const requestUrl = "https://api.github.com/users/hiteshchoudhary"
+    const xhr = new XMLHttpRequest();
+    // console.log(xhr.readyState);
+    xhr.open('GET',requestUrl)
+    xhr.onreadystatechange = function(){
+    console.log(xhr.readyState);
+    if(xhr.readyState === 4){
+        const data = JSON.parse(this.responseText)
+        console.log(typeof data);
+
+        const info = document.querySelector(".card-button")
+        const title = document.querySelector(".text-title")
+        const titleBody = document.querySelector(".text-body")
+        const avatar = document.querySelector("#avatar")
+        
+        info.addEventListener("click",function(event){
+            avatar.src = data.avatar_url
+            title.innerHTML = data.login
+            titleBody.innerHTML = `Total Followers: ${data.followers} <br> Total Public Repos: ${data.public_repos}`;
+
+            
+        })
+
+        
+        
+    }
+    }
+    
+    xhr.send()
+</script>
+</html>
