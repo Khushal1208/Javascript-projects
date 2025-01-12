@@ -142,3 +142,4 @@ Both methods achieve the same goal of fetching data asynchronously, but async/aw
 // 3. Error handling is more intuitive with async/await due to the use of try/catch blocks.
 // 4. Use Promises for existing codebases or compatibility; prefer async/await for new projects to enhance maintainability.
 
+ 
