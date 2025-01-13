@@ -156,6 +156,7 @@ getCheese4()
 */
 
 
+
 // Learning:
 // - Chaining `then` maintains a sequential order of asynchronous operations.
 // - Errors in any `then` block are caught in the `catch` block.
