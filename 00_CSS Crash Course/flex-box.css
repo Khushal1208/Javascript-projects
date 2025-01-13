@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#box{
+    display: flex;
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: center; */
+    /* justify-content: space-around; */
+    /* justify-content: space-evenly; */
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+
+#chota1{
+    display: flex;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+#orchota1{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(72, 14, 198);
+}
+#orchota2{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(14, 175, 55);
+}
+
+
+#chota2{
+    display: flex;
+    width: 150px;
+    height: 150px;
+    background-color: rgba(155, 34, 131, 0.992);
+}
+
+#orchota3{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(28, 12, 206);
+}
+
+#orchota4{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(15, 192, 9);
+}

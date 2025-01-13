@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    height: 100%;
+    width: 100%;
+}
+
+#box{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    background-color: red;
+}
+#chota1{
+    position: absolute;
+    left: 40%;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+#chota2{
+    position: absolute;
+    top:40%;
+    left: 40%;
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+}
+
+#orchota1{
+    position: absolute;
+    left: 40%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(72, 14, 198);
+}
+
+
+#orchota2{
+    position: absolute;
+    top:60%;
+    left: 50%;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(28, 12, 206);
+}
