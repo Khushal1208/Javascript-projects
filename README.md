@@ -4,5 +4,5 @@ beginner to advanced
 with projects..
 lets build 
 
-##30 days 30 javacript projects
+# 30 days 30 javacript projects
 https://courses.wesbos.com/account
